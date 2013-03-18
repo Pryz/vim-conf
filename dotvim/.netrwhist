@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/ju/.ssh'
+let g:netrw_dirhist_2='/home/ju/.vim'
+let g:netrw_dirhist_3='/home/ju/Dev/storage/neo4j'
+let g:netrw_dirhist_4='/var/lib/tftpboot/pxelinux.cfg'
+let g:netrw_dirhist_5='/home/ju/.gvfs'
+let g:netrw_dirhist_6='/home/ju/Dev/asciidoc/themes/black'
+let g:netrw_dirhist_7='/home/ju/Documents/Think/Camaieu/Réorganisation_Oracle/1 - aplbora2/files/cron/etc/cron.daily'

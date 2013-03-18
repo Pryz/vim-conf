@@ -1,0 +1,46 @@
+" Pathogen autoload for bundle
+call pathogen#infect()
+syntax on
+filetype plugin indent on
+
+" no backup files
+set backupcopy=no
+set nobackup
+
+" indentation
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set smarttab
+set smartindent
+" expandtab
+set expandtab
+set et
+
+set textwidth=80
+
+" highlight search
+set hlsearch
+
+" highlight search
+set hlsearch
+
+" Asciidoc
+" " setl ft will override any previous setfiletype
+autocmd BufNewFile,BufRead *.txt setl ft=asciidoc
+command Ad setfiletype asciidoc
+
+" " Ruby
+autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
+autocmd FileType ruby,eruby let g:rubycomplete_buffer_loading = 1
+autocmd FileType ruby,eruby let g:rubycomplete_rails = 1
+autocmd FileType ruby,eruby let g:rubycomplete_classes_in_global = 1
+
+" " Python
+autocmd FileType python set omnifunc=pythoncomplete#Complete
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+" Puppet
+autocmd BufNewFile,BufRead *.pp setl ft=puppet
+
